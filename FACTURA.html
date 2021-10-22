@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    for(let i=1;i<=2;i++){
+        var nombre=prompt("Nombre completo:")
+        var modelo=prompt("Modelo que desea comprar: A1,A2,A3")
+        var compra=parseFloat(prompt("Ingrese el valor de la compra"))
+        var tarjeta=prompt("Pagaracon tarjeta: Si o No")
+        
+        switch(modelo){
+
+            case "A1": document.write('<h1>Computadoras y mas </h1><br>')
+                       document.write('<h2>Factura cliente #${i} </h2><br>')
+                       document.write('<p>Nomnre del cliente;${nombre} </p><br>')
+                       document.write('<p>Modelo comprado: $ {modelo} </p><br>')
+                       document.write('<p>Descuento de la tarjeta:${tarjeta} </p><br>')
+                       document.write('<p> Descuento:${compra*0.10} </p><br>')
+                       document.write('<p>Compra: ${compra} </p><br>')
+                       if(tarjeta.toUpperCase()==="SI"){
+                        document.write('<p>Descuento Tarjeta Puntos: ${compra*0.5}</p>')
+                        document.write('Total a Pagar: ${(compra-(compra*0.15))}')
+                       }else if (tarjeta.toUpperCase()==="NO"){
+                        document.write('<p>Descuento Targetas punto: ${0}</p>')   
+                        document.write('Total a pagar: ${compra-(compra*0.10)}')
+                        } break
+
+            case "A2": document.write('<h1>Computadoras y mas </h1><br>')
+                       document.write('<h2>Factura cliente #${i} </h2><br>')
+                       document.write('<p>Nomnre del cliente;${nombre} </p><br>')
+                       document.write('<p>Modelo comprado: $ {modelo} </p><br>')
+                       document.write('<p>Descuento de la tarjeta:${tarjeta} </p><br>')
+                       document.write('<p> Descuento:${compra*0.10} </p><br>')
+                       document.write('<p>Compra: ${compra} </p><br>')
+                       if(tarjeta.toUpperCase()==="SI"){
+                        document.write('<p>Descuento Tarjeta Puntos: ${compra*0.5}</p>')
+                        document.write('Total a Pagar: ${(compra-(compra*0.20))}')
+                       }else if (tarjeta.toUpperCase()==="NO"){
+                        document.write('<p>Descuento Targetas punto: ${0}</p>')   
+                        document.write('Total a pagar: ${compra-(compra*0.15)}')
+                        } break
+
+            case "A2": document.write('<h1>Computadoras y mas </h1><br>')
+                       document.write('<h2>Factura cliente #${i} </h2><br>')
+                       document.write('<p>Nomnre del cliente;${nombre} </p><br>')
+                       document.write('<p>Modelo comprado: $ {modelo} </p><br>')
+                       document.write('<p>Descuento de la tarjeta:${tarjeta} </p><br>')
+                       document.write('<p> Descuento:${compra*0.10} </p><br>')
+                       document.write('<p>Compra: ${compra} </p><br>')
+                       if(tarjeta.toUpperCase()==="SI"){
+                        document.write('<p>Descuento Tarjeta Puntos: ${compra*0.5}</p>')
+                        document.write('Total a Pagar: ${(compra-(compra*0.25))}')
+                       }else if (tarjeta.toUpperCase()==="NO"){
+                        document.write('<p>Descuento Targetas punto: ${0}</p>')   
+                        document.write('Total a pagar: ${compra-(compra*0.20)}')
+                        } break
+
+
+
+                   
+                    
+
+        }
+    }
+</script>
+<body>
+    
+</body>
+</html>
